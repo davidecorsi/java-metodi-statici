@@ -1,15 +1,17 @@
 
 public class Static {
-	int n = 10;
-	static int n1 = 20;
+	int n = 10; // variabile di istanza
+	static int count = 0; // variabile statica
 	
-	public int getNumber() {
-//		return n1;
-//		return n;
+	public Static() {
+		count++;
 	}
 	
-	public static getStaticNumber() {
-//		return n1;
-//		return n;
+	public int getNumber() { // metodo di istanza
+		return n;
+	}
+	
+	public static int getCount() { // metodo statico
+		return count;
 	}
 }
